@@ -1,0 +1,109 @@
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  background-color:black;
+  overflow-x:hidden;
+}
+
+#clock-container{
+  
+  position:relative;
+  margin-top:40px;
+  margin-left:55%;
+ 
+ border-radius:60%;
+ 
+  height:40vw;
+  width:40vw;
+  background:url("https://w7.pngwing.com/pngs/813/410/png-transparent-social-media-marketing-time-management-clock-clock-without-hands-angle-content-marketing-time-thumbnail.png") no-repeat;
+  background-size:100%;
+}
+#hour,#min,#sec{
+  position:absolute;
+  background:black;
+  border-radius:10px;
+  transform-origin:bottom;
+ 
+}
+#hour{
+   height:20%;
+  width:1.8%;
+  top:30%;
+  left:48.85%;
+  
+    
+}
+#min{
+   height:31%;
+  width:1.7%;
+  top:20%;
+  left:48.89%;
+  opacity:0.8;
+  
+  
+    
+}
+#sec{
+   height:35%;
+  width:1%;
+  top:16%;
+  left:49.3%;
+  opacity:0.8;
+  
+    
+}
+.content{
+position:absolute;
+ left:30px;
+  top:120px;
+  color:black;
+  border-radius:10px;
+  padding:10px;
+
+  width:40vw;
+  height:44vh;
+  
+  background:yellow;
+}
+.content h1{
+  font-family: 'Rowdies', cursive;
+  font-weight:100;
+  
+  
+}
+.content p{
+  font-family: 'Roboto', sans-serif;
+  width:85%;
+  margin-top:10px;
+  line-height:1.3;
+  letter-spacing:1px;
+}
+@media(750px>width){
+ #clock-container{
+  margin-top:30px !important;
+  position:relative;
+   margin:auto;
+  }
+  .content{
+    
+    margin-bottom:10px;
+    margin-top:27%;
+    width:57%;
+    height:31%;
+   left:20%;
+  }
+  p{
+    width:100%!important;
+    font-size:2.4vw;
+  }
+  .content h1{
+    font-size:4vw;
+  }
+}
+@media(600px>width){
+  .content{
+    height:30vw;
+  }
+}
